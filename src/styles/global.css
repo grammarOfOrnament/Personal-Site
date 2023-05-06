@@ -1,0 +1,216 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+
+
+ /* Navbar Styling  */
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+ 
+ *{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ html{
+	font-size: 62.5%;
+ }
+ 
+ body{
+   font-family: "Roboto", sans-serif;
+ }
+ 
+ a, a:hover{
+   text-decoration: none;
+ }
+ 
+ .top-bar{
+   display:flex;
+   align-items: center;
+   justify-content:space-between;
+   padding: 10px 25px;
+   background: #ef4b3f;
+ }
+ 
+ .top-bar span{
+   color: #fff;
+ }
+ 
+ .top-bar ul{
+   list-style: none;
+   display:flex;
+ }
+ 
+ .top-bar li{
+   margin: 0 5px;
+ }
+ 
+ .top-bar a{
+   color: #fff;
+ }
+ 
+ .top-bar a:hover{
+   color: #222;
+ }
+ 
+ nav{
+   background: #FEF4E8;
+   padding: 0.7rem 3%;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   position:sticky;
+   top: 0;
+   margin-left: -3%;
+   margin-right: -3%;
+ }
+ 
+ nav a{
+   color: #1C2520;
+ }
+ 
+ nav a:hover{
+   color: #144E5A;
+ }
+ 
+ .logo{
+   margin-right: auto;
+ }
+ 
+ .logo a{
+   display: flex;
+   align-items: center;
+   font-size: 32px;
+   color: #1C2520;
+   font-weight: 700;
+   font-family: "maiola", sans-serif;
+ }
+ 
+ .logo a:hover{
+   color: #144E5A;
+ }
+ 
+ .menu{
+   display: flex;
+   align-items: center;
+   list-style: none;
+ }
+ 
+ .menu li{
+   padding: 15px 10px;
+   font-size: 16px;
+ }
+ 
+ .toggle{
+   font-size: 30px;
+   display:none;
+ }
+ 
+ @media screen and (max-width: 600px) {
+   nav{
+	 display: block;
+	 position:relative;
+	 padding:15px 20px;
+	 position:sticky;
+	 top: 0;
+   }
+   
+   .menu{
+   margin-top: 15px;
+   display:none;
+   }
+ 
+   .menu.active, .toggle{
+	 display: block;
+   }
+ 
+   .toggle{
+	 position: absolute;
+	 top:18px;
+	 right:20px;
+   }
+ 
+ }
+
+
+
+
+
+
+/* Default Astro Styling */
+
+ * {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: sans-serif;
+	margin-left: 3%;
+	margin-right: 3%;
+	padding: 0;
+	max-width: 600ch;
+	text-align: left;
+	background-color: #ccc;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	line-height: 1.5;
+	color: #444;
+}
+
+.blogPage{
+	max-width: 65ch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+	color: #222;
+}
+
+a {
+	color: #3273dc;
+}
+
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+input {
+	font-size: 16px;
+}
+content {
+	line-height: 1.6;
+}
+table {
+	width: 100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+code {
+	padding: 2px 5px;
+	background-color: #f2f2f2;
+}
+pre {
+	padding: 1rem;
+}
+pre > code {
+	all: unset;
+}
+blockquote {
+	border: 1px solid #999;
+	color: #222;
+	padding: 2px 0px 2px 20px;
+	margin: 0px;
+	font-style: italic;
+}

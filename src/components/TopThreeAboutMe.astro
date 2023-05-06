@@ -1,0 +1,87 @@
+---
+
+---
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+<style>
+
+    .grid_container {
+  				display: flex;
+  				flex-wrap: wrap;
+                justify-content: center;
+  				/* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+			}
+
+            .child{
+                flex: 0 1 350px;
+            }
+
+			.grid_container div {
+				display: flex;
+                flex-direction: column;
+                /* background: #ddd; */
+                z-index: -2;
+                align-items: center;
+
+			}
+
+			section{
+                margin-bottom:10rem;
+			}
+
+            .icon{
+                font-size: 4rem;
+                color: #1C2520;
+                z-index: -1;
+                margin-bottom: 2rem;
+            }
+
+            h3{
+                font-family: "maiola";
+                font-weight: 700;
+                font-size: 2.6rem;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                text-align: center;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-size: 1.6rem;
+            }
+            
+            @media screen and (max-width: 775px) {
+                div.grid_container {
+                    margin-bottom: 8rem;
+  				    grid-gap: 5rem;
+                }
+            }
+
+            @media (min-width:775px) and (max-width:1116px){
+                .child:last-child{
+                    margin-top:3rem;
+                }
+            }
+
+</style>
+
+    <section>
+        <div class="grid_container">
+            <div class="child">
+                <ion-icon class="icon" name="eye-outline"></ion-icon>
+                <h3>Visual Designer</h3>
+                <p>Work experience designing consistent UI design systems for enterprise applications, visual design scholar, typography geek, art and design history and philosophy buff.</p>
+            </div>
+            <div class="child">
+                <ion-icon class="icon" name="chatbubbles-outline"></ion-icon>
+                <h3>Eloquent Communication</h3>
+                <p>Collaboration with designers and a design leader within agile, cross-functional teams. The team will learn design decisions are backed by data, research, and best practices.</p>
+            </div>
+            <div class="child">
+                <ion-icon class="icon" name="extension-puzzle-outline"></ion-icon>
+                <h3>Creative-Minded</h3>
+                <p>I love to build things. Adobe, Figma, prototypes, wireframes, mockups, responsive and mobile-first design, front-end development (HTML, CSS, JavaScript (Node.js)).</p>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,65 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+
+---
+
+<head>
+    <title>{SITE_TITLE}</title>
+
+	<!-- Links -->
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	
+</head>
+<body>
+<!--  Navbar    -->
+<nav>
+	<div class="logo">
+	  <a href="/"> {SITE_TITLE} </a>
+	</div>
+	<div class="toggle">
+	  <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+	</div>
+	<ul class="menu">
+	  	<li>
+			<HeaderLink href="/about">About</HeaderLink>
+		</li>
+	  	<li>
+			<HeaderLink href="/work">Work</HeaderLink>
+		</li>
+	  	<li>
+			<HeaderLink href="/services">Services</HeaderLink>
+		</li>
+	  	<li>
+			<HeaderLink href="/contact">Contact</HeaderLink>
+	  	</li>
+	  	<li>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+		</li>
+	</ul>
+  </nav>
+
+<!-- Toggle for Mobile Navbar Menu -->
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+	const toggle = document.querySelector('.toggle');
+	const menu = document.querySelector('.menu');
+	const toggleLink = toggle.querySelector('a');
+	
+	toggle.addEventListener('click', () => {
+		if (menu.classList.contains('active')) {
+			menu.classList.remove('active');
+			toggleLink.innerHTML = "<ion-icon name='menu-outline'></ion-icon>";
+		} else {
+			menu.classList.add('active');
+			toggleLink.innerHTML = "<ion-icon name='close-outline'></ion-icon>";
+		}
+	});
+});
+  </script>
+
+</body>
+
+<!-- Navbar https://www.youtube.com/watch?v=F3pSGnhV-H8 -->
+<!-- Icons https://ionic.io/ionicons -->
+<!-- Google Fonts https://fonts.google.com/ -->

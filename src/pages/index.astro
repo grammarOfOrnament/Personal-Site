@@ -1,0 +1,66 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import CaseStudiesSection from '../components/CaseStudiesSection.astro';
+import LandingPageHero from '../components/LandingPageHero.astro';
+import TopThreeAboutMe from '../components/TopThreeAboutMe.astro';
+import BlogGridSection from '../components/BlogGridSection.astro';
+import AboutMe from '../components/AboutMe.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+
+		<style>
+			.showcase{
+				padding:0;
+			}
+
+			.showcase img{
+				object-fit: cover;
+				width: 100%;
+				height: 65vh;
+			}
+
+			h2{
+				padding-bottom: 2rem;
+				font-size: 2.5rem;
+			}
+
+			body{
+				background-color: #FEF4E8;
+			}
+		</style>
+
+
+
+	</head>
+	<body>
+		<!-- <Header title={SITE_TITLE} /> -->
+		<Header />
+
+		<main>
+			<LandingPageHero />
+			<TopThreeAboutMe />
+
+		<CaseStudiesSection />
+			<!-- <BlogGridSection /> -->
+			<AboutMe />
+			<Contact />
+			<!-- Footer Section -->
+
+		<!-- <section class="showcase">
+			<img src="https://images.unsplash.com/photo-1563387852576-964bc31b73af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1207&q=80">
+		</section> -->
+
+		</main>
+		<Footer />
+	</body>
+</html>
