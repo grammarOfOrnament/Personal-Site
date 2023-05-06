@@ -152,7 +152,6 @@ body {
 	margin-left: 3%;
 	margin-right: 3%;
 	padding: 0;
-	max-width: 600ch;
 	text-align: left;
 	background-color: #ccc;
 	word-wrap: break-word;
@@ -160,6 +159,18 @@ body {
 	line-height: 1.5;
 	color: #444;
 }
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* @media (min-width: px) {
+	body {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+} */
 
 .blogPage{
 	max-width: 65ch;
