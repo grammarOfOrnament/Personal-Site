@@ -22,29 +22,30 @@ import { SITE_TITLE } from '../consts';
 	</div>
 	<ul class="menu">
 	  	<li>
-			<HeaderLink href="/about">About</HeaderLink>
 		</li>
 	  	<li>
-			<HeaderLink href="/work">Work</HeaderLink>
+			<a href="#works-section" class="workLink">Works</a>
 		</li>
-	  	<li>
+	  	<!-- <li>
 			<HeaderLink href="/services">Services</HeaderLink>
-		</li>
+		</li> -->
 	  	<li>
-			<HeaderLink href="/contact">Contact</HeaderLink>
+			<HeaderLink href="#about-me-section">About</HeaderLink>
+		</li>
+		<li>
+			<HeaderLink href="#contact-section">Contact</HeaderLink>
 	  	</li>
-	  	<li>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-		</li>
 	</ul>
   </nav>
 
 <!-- Toggle for Mobile Navbar Menu -->
 <script>
-	window.addEventListener('DOMContentLoaded', () => {
 	const toggle = document.querySelector('.toggle');
 	const menu = document.querySelector('.menu');
 	const toggleLink = toggle.querySelector('a');
+	const workLink = document.querySelector('.workLink');
+
+	window.addEventListener('DOMContentLoaded', () => {
 	
 	toggle.addEventListener('click', () => {
 		if (menu.classList.contains('active')) {
@@ -56,6 +57,17 @@ import { SITE_TITLE } from '../consts';
 		}
 	});
 });
+
+	workLink.addEventListener('click', () => {
+		console.log("click heard!");
+		if (menu.classList.contains('active')) {
+			menu.classList.remove('active');
+			toggleLink.innerHTML = "<ion-icon name='menu-outline'></ion-icon>";
+		} else {
+			menu.classList.add('active');
+			toggleLink.innerHTML = "<ion-icon name='close-outline'></ion-icon>";
+		}
+	});
   </script>
 
 </body>
