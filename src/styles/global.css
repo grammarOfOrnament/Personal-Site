@@ -24,14 +24,23 @@ h1{
    	font-family: "maiola", sans-serif;
 }
 
+h2{
+	font-family: "maiola";
+}
+
  p{
 	font-size: 1.6rem;
 	font-family: "Roboto";
+	margin-bottom: 2.4rem;
  }
 
  time{
 	font-size: 1.6rem;
 	font-family: "Roboto";
+ }
+
+ li{
+	font-size: 1.6rem;
  }
  
  body{
@@ -83,6 +92,7 @@ h1{
    margin-left: -3%;
    margin-right: -3%;
  }
+
  
  nav a{
    color: #1C2520;
