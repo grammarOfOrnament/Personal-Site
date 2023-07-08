@@ -25,15 +25,18 @@
             }
 
 			.grid_container div {
-				display: flex;
-                justify-content: flex-end;
-                flex-direction: column;
-                background: #144E5A;
+				/* display: flex; */
+                /* justify-content: flex-end; */
+                /* flex-direction: column; */
+                background-color: #666;
                 border-radius: 4px;
+                max-height: 20rem;
+                box-shadow: inset 0px 130px 40px 6px #fff;
+                transition: box-shadow 1s;
 			}
 
             .grid_container div:hover{
-                background: #0d373f;
+                box-shadow: inset 0px 100px 80px #888;
                 cursor: pointer;
             }
 
@@ -44,9 +47,11 @@
 			}
 
             .grid_container div img {
-                height: 50%;
-                width:100%;
+                height: 100%;
+                width: 100%;
                 object-fit: cover;
+                border-radius: 4px;
+                mix-blend-mode: multiply;
             }
 
             h1{
@@ -73,6 +78,16 @@
                 margin-bottom: 0rem;
             }
 
+            .project_title{
+                position: relative;
+                bottom: 130px;
+            }
+
+            .project_subtitle{
+                position: relative;
+                bottom: 130px;
+            }
+
             @media screen and (max-width: 844px) {
                 div.grid_container {
   				    display: grid;
@@ -92,20 +107,22 @@
 </style>
 
     <section id="works-section">
-        <h1>Case Studies</h1>
+        <h1>Works</h1>
         <div class="grid_container">
             <div class="project1">
-                <!-- <img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"> -->
-                <h4 class="project1_title">Systematizing Daily Problem-Solving</h4>
-                <p>UX/UI Project</p>
+                <a href="https://jasondipopolo.notion.site/Siddhartha-Productivity-App-3e79d8fe310d4da5bf5fb51fb113fef1?pvs=4"><img src="Siddhartha.png"></a>
+                <a href="https://jasondipopolo.notion.site/Siddhartha-Productivity-App-3e79d8fe310d4da5bf5fb51fb113fef1?pvs=4"><h4 class="project_title">Systematizing Daily Problem-Solving</h4></a>
+                <a href="https://jasondipopolo.notion.site/Siddhartha-Productivity-App-3e79d8fe310d4da5bf5fb51fb113fef1?pvs=4"><p class="project_subtitle">UX/UI Project</p></a>
             </div>
             <div class="project2">
-                <h4>Dept. of Defense Career Growth Platform Design System</h4>
-                <p>UX/UI Project</p>
+                <a href="https://jasondipopolo.notion.site/Perfect-Mess-Exhibition-Announcement-585afbb8f22449f3beedcd60ff2722bd?pvs=4"><img src="marinGif.gif"></a>
+                <a href="https://jasondipopolo.notion.site/Perfect-Mess-Exhibition-Announcement-585afbb8f22449f3beedcd60ff2722bd?pvs=4"><h4 class="project_title">Exhibition Announcement for Poster Designer</h4></a>
+                <a href="https://jasondipopolo.notion.site/Perfect-Mess-Exhibition-Announcement-585afbb8f22449f3beedcd60ff2722bd?pvs=4"><p class="project_subtitle">Visual Design Project</p></a>
             </div>
             <div class="project3">
-                <h4>Exhibition Announcement for Poster Designer</h4>
-                <p>Visual Design Project</p>
+                <a href="https://jasondipopolo.notion.site/New-York-Times-Website-Redesign-31d0120478314bcdb475132206e1d94d?pvs=4"><img src="NYT-Redesign.png"></a>
+                <a href="https://jasondipopolo.notion.site/New-York-Times-Website-Redesign-31d0120478314bcdb475132206e1d94d?pvs=4"><h4 class="project_title">New York Times Redesign</h4></a>
+                <a href="https://jasondipopolo.notion.site/New-York-Times-Website-Redesign-31d0120478314bcdb475132206e1d94d?pvs=4"><p class="project_subtitle">UX/UI Project</p></a>
             </div>
         </div>
     </section>
