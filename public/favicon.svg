@@ -1,9 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
-    <path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" />
-    <style>
-        path { fill: #000; }
-        @media (prefers-color-scheme: dark) {
-            path { fill: #FFF; }
-        }
-    </style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 283 283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-8928.56,-877.083)">
+        <g transform="matrix(1,0,0,1,7364.49,526.797)">
+            <g transform="matrix(0.729448,0,0,0.729448,-4753.93,127.019)">
+                <circle cx="8854.95" cy="499.7" r="193.622" style="fill:#FEF4E8;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,7364.49,526.797)">
+            <g transform="matrix(1,0,0,1,1515.82,234.634)">
+                <path d="M226.941,312.192C223.822,313.897 217.585,317.308 218.381,321.973C222.821,348.013 258.011,328.065 253.074,326.252C249.997,325.121 219.901,320.867 222.484,314.784" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                <g transform="matrix(0.619627,0,0,0.791524,89.846,61.3487)">
+                    <path d="M232.953,267.068C227.545,271.641 225.375,279.096 236.205,294.271" style="fill:none;stroke:rgb(5,6,8);stroke-width:11.26px;"/>
+                </g>
+                <g transform="matrix(0.873512,-0.486802,0.486802,0.873512,-112.047,140.441)">
+                    <path d="M211.652,282.094C213.702,283.304 215.753,284.514 217.803,285.724" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,0,1)">
+                    <path d="M207.178,267.957C212.839,257.151 220.415,252.337 232.953,254.776" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                </g>
+                <path d="M221.916,296.128C234.316,298.094 245.713,289.582 245.007,287.042C233.595,245.979 207.811,274.353 221.916,296.128Z" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                <path d="M247.395,232.548C249.619,293.779 268.939,276.85 270.204,284.224C271.133,289.642 264.9,291.778 265.414,295.978C271.622,346.641 244.419,371.033 196.201,370.787C168.742,370.647 131.954,358.249 128.391,326.306" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                <path d="M139.861,284.224C136.041,271.437 105.606,274.461 116.915,311.835C124.041,335.385 148.219,328.018 148.02,320.416" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                <path d="M144.152,232.548C151.487,253.261 147.451,268.176 139.861,276.949" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                <path d="M144.152,191.171C112.707,166.969 93.651,188.132 91.263,228.77C87.536,292.214 105.878,305.294 115.049,311.835" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                <g transform="matrix(1,0,0,1,0,-1)">
+                    <path d="M233.699,184.641C234.671,166.979 246.105,134.698 255.293,150.603C272.19,179.85 272.594,210.814 246.758,233.108C217.892,258.016 169.105,258.263 144.152,232.548" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,0,20)">
+                    <path d="M144.152,171.171C166.814,149.16 205.565,146.356 233.699,164.641" style="fill:none;stroke:rgb(5,6,8);stroke-width:8px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
