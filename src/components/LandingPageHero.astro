@@ -5,11 +5,87 @@
 
 
 <style>
+    section{
+        margin-bottom: 8rem;
+    }
     
-    div.grid_container {
+    a{
+        color:white;
+    }
+
+    .hero {
+  border-radius: 20px;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  margin:5% 3% 0% 3%;
+  background-color: bisque;
+}
+
+/* Left side content */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 6.5rem;
+  /* margin-bottom: -1rem; */
+  line-height: 6.5rem;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  background-color: #144E5A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width:15rem;
+}
+
+/* Image container styles */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Image styles */
+img {
+  min-width: 105%;
+  min-height: 105%;
+  border-radius: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .image-container {
+    justify-content: center;
+  }
+  button {
+    /* margin-top: 20px; */
+    margin-bottom:4rem;
+  }
+}
+
+    /* div.grid_container {
   				display: grid;
   				grid-gap: 1rem;
   				grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+
+                background-color: bisque;
+                padding-left:4rem;
+                margin-right:4rem;
+                border-radius: 8px;
 			}
 
 	
@@ -44,6 +120,7 @@
 
             p{
                 padding-top: 3%;
+                padding-right: 3rem;
                 font-size: 1.6rem;
                 font-family: "Roboto";
             }
@@ -65,15 +142,15 @@
             }
 
             img{
-                border-radius:50%;
-                max-width:80%;
+                /* border-radius:50%; */
+                /* max-width:120%;
                 max-height: 140rem;
-                /* margin-top: 2rem;
-                margin-bottom: 2rem; */
-            }
+                margin-top: -3rem;
+                padding-right: 10rem;
+            } */
 
 
-            @media screen and (max-width: 775px) {
+            /* @media screen and (max-width: 775px) {
                 .grid_section_with_img{
                     display: none;
                 }
@@ -81,20 +158,27 @@
                     margin-top: 5rem;
                     margin-bottom: 5rem;
                 }
-                
             }
+
+            @media screen and (max-width: 624px) {
+                .heroHeader{
+                font-size: 5rem;
+                line-height: 4.5rem;
+                }
+            } */ */
+
+
 </style>
 
     <section>
-        <div class="grid_container">
-            <div class="grid_section_with_text">
-                <!-- <img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"> -->
-                <h1 class="heroHeader">UX/UI Designer <br>& Entrepreneur</h1>
-                <p>Embrace simplicity with a lean UX/UI design approach.</p>
-                    <button style="width: 10rem;"><a href="#contact-section" style="color:white;">Let's Talk</a></button>
+        <div class="hero">
+            <div class="content">
+              <h1>UX/UI Designer</h1>
+              <p>Embrace simplicity with a lean UX/UI design approach.</p>
+              <button><a href="mailto:jasondipopolo.kindly665@passmail.net">Let's Talk!</a></button>
             </div>
-            <div class="grid_section_with_img">
-                <img src="me-3D-circle.png">
+            <div class="image-container">
+              <img src="me-in-3d-cutout.png" alt="Image">
             </div>
-        </div>
+          </div>
     </section>
