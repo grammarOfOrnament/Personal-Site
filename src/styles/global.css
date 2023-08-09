@@ -8,11 +8,11 @@
  /* Navbar Styling  */
  @font-face {
 	font-family: 'Neco Bold';
-	src: url(./public/Neco-Bold.woff) format("woff");
+	src: url(./fonts/Neco-Bold.woff) format("woff");
  }
  @font-face {
 	font-family: 'Satoshi';
-	src: url(./public/Satoshi-Medium.woff) format("woff");
+	src: url(./fonts/Satoshi-Medium.woff) format("woff");
  }
  
  *{
