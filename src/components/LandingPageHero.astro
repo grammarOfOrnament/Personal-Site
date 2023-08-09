@@ -33,19 +33,21 @@
 /* Heading styles */
 h1 {
   font-size: 6.5rem;
-  /* margin-bottom: -1rem; */
-  line-height: 6.5rem;
+  margin-bottom: 1rem;
+  line-height: 5.5rem;
 }
 
 /* Button styles */
 button {
-  padding: 10px 20px;
-  background-color: #144E5A;
+  padding: 8px 15px;
+  background-color: #86615c;
   color: white;
+  font-family: "Satoshi";
+  font-size: 1.6rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  max-width:15rem;
+  max-width:12rem;
 }
 
 /* Image container styles */
@@ -75,6 +77,11 @@ img {
     /* margin-top: 20px; */
     margin-bottom:4rem;
   }
+  h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  line-height: 3.5rem;
+    }
 }
 
     /* div.grid_container {
@@ -173,12 +180,23 @@ img {
     <section>
         <div class="hero">
             <div class="content">
-              <h1>UX/UI Designer</h1>
-              <p>Embrace simplicity with a lean UX/UI design approach.</p>
+              <h1>Embrace Simplicity</h1>
+              <p>with a lean UX/UI design approach.</p>
               <button><a href="mailto:jasondipopolo.kindly665@passmail.net">Let's Talk!</a></button>
             </div>
             <div class="image-container">
-              <img src="me-in-3d-cutout.png" alt="Image">
+              <img 
+              src="me-in-3d-cutout-lowRes.webp" 
+              alt="A 3D rendering of Jason DiPopolo"
+              srcset="
+              me-in-3d-cutout-sm.webp 571w,
+              me-in-3d-cutout.webp 752w
+              "
+              sizes="(min-width: 1360px) 571px, (min-width: 780px) 41.43vw, calc(92.83vw - 42px)"
+              >
+              
+
+              <!-- 256×262, 571×585, 752×771, 970×995, 1142×1171, 1330×1364 -->
             </div>
           </div>
     </section>

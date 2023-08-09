@@ -6,7 +6,14 @@
 
 
  /* Navbar Styling  */
- @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+ @font-face {
+	font-family: 'Neco Bold';
+	src: url(public/Neco-Bold.woff);
+ }
+ @font-face {
+	font-family: 'Satoshi';
+	src: url(public/Satoshi-Medium.woff);
+ }
  
  *{
    margin:0;
@@ -21,19 +28,19 @@
 
 h1, h2, h3, h4{
 	font-weight: 700;
-   	font-family: "maiola", sans-serif;
+   	font-family: "Neco Bold", sans-serif;
 	margin-top: 2.5rem;
 }
 
  p{
 	font-size: 1.6rem;
-	font-family: "Roboto";
+	font-family: "Satoshi";
 	margin-bottom: 2.4rem;
  }
 
  time{
 	font-size: 1.6rem;
-	font-family: "Roboto";
+	font-family: "Satoshi";
  }
 
  li:not(nav){
@@ -51,7 +58,7 @@ h1, h2, h3, h4{
  }
  
  body{
-   font-family: "Roboto", sans-serif;
+   font-family: "Satoshi", sans-serif;
    background-color: #FEF4E8;
  }
  
@@ -107,20 +114,23 @@ h1, h2, h3, h4{
  }
  
  nav a:hover{
-   color: #144E5A;
+   color: #d36135;
  }
  
  .logo{
    margin-right: auto;
+   display: flex;
+   align-items: start;
+   flex-direction: column;
+   margin-bottom: -1.8rem;
  }
  
  .logo a{
-   display: flex;
-   align-items: center;
    font-size: 32px;
    color: #1C2520;
    font-weight: 700;
-   font-family: "maiola", sans-serif;
+   font-family: "Neco Bold", sans-serif;
+   margin-bottom: -.7rem;
  }
 
  /* Pushes anchor link jumped to below the navbar enough so the navbar doesn't cover the section's heading */
@@ -130,7 +140,7 @@ h1, h2, h3, h4{
  }
  
  .logo a:hover{
-   color: #144E5A;
+   color: #d36135;
  }
  
  .menu{
@@ -147,6 +157,7 @@ h1, h2, h3, h4{
  .toggle{
    font-size: 30px;
    display:none;
+   margin-top: .3rem;
  }
  
  @media screen and (max-width: 600px) {
@@ -189,7 +200,7 @@ h1, h2, h3, h4{
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Satoshi";
 	margin-left: 3%;
 	margin-right: 3%;
 	padding: 0;
@@ -212,6 +223,15 @@ main {
 		margin-right: 20%;
 	}
 } */
+
+
+
+
+
+
+
+
+
 
 .blogPage{
 	max-width: 65ch;

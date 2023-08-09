@@ -12,6 +12,7 @@
 
             .project1{
                 grid-area: project1;
+
             }
 
             .project2{
@@ -21,7 +22,7 @@
 			.grid_container div {
 				display: flex;
                 flex-direction: column;
-                background: #144E5A;
+                background: #ffe4c4;
                 border-radius: 4px;
 			}
 
@@ -30,7 +31,7 @@
             }
 
 			section{
-                margin-bottom: 10rem;
+                margin-bottom: 8rem;
 			}
 
             .grid_container div img {
@@ -39,23 +40,24 @@
             }
 
             h1{
-                font-family: "maiola";
+                font-family: "Neco Bold";
                 font-size: 4.2rem;
                 font-weight: 700;
                 padding-bottom: 1rem;
             }
 
             h2{
-                font-family: "maiola";
+                font-family: "Neco Bold";
                 color: white;
                 font-size: 2.6rem;
                 margin-top: -0.5rem;
             }
 
             p{
-                font-family: "Roboto";
-                color:white;
+                font-family: "Satoshi";
+                color: #1c2520;
                 font-size: 1.6rem;
+                max-width: 80%;
             }
 
             img{
@@ -66,12 +68,15 @@
                 margin-bottom: 0.5rem;
             }
 
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: 600px) {
                 div.grid_container {
                     margin-bottom: 8rem;
                       grid-template-areas: 
                         "project1"
                         "project2";
+                }
+                p{
+                    max-width: 100%;
                 }
             }
 </style>
@@ -80,12 +85,21 @@
         <h1>About Me</h1>
         <div class="grid_container">
             <div class="project1">
-                <img src="me.png">
+                <img 
+                src="dorianGray-lowRes.avif" 
+                alt="Jason DiPopolo smiling, holding a novel"
+                srcset="
+                dorianGray-sm.avif 506w,
+                dorianGray-md.avif 770w,
+                dorianGray.avif 960w
+                "
+                sizes="(min-width: 1340px) 253px, (min-width: 620px) calc(22vw - 37px), 94vw"
+                >
             </div>
             <div class="project2">
                 <!-- <h2>Jason DiPopolo</h2> -->
                 <!-- <p>Interaction Designer</p> -->
-                <p class="description">Higher education trained in design, 6 years in the industry, and 2 years in UX/UI for SaSS. Experience with uplifting low UX maturity companies. Passionate in creating an environment where user-centered design thrives. Curious, always seeking to be humble in heart, and excited to learn. I'll always look forward to creating selfless experiences together.<br><br>Outside of UX/UI design, I learn to grow as an entrepreneur, leather craftsman, content creator, graphic designer, and philosopher (lover of wisdom) coming to understand how to live. 
+                <p class="description">Higher education trained in design, 6 years in the industry, and 2 years in UX/UI for SaSS. Experience with uplifting low UX maturity companies. Passionate in creating an environment where user-centered design thrives. Curious, always seeking to be humble in heart, and excited to learn. I'll always look forward to creating selfless experiences together.<br><br>Outside of UX/UI design, I learn to grow as an entrepreneur, leather craftsman, graphic designer, meditation practicioner and I am conintuously fascinated by philosophy and maturing in my own personal ethics. 
                 </p>
             </div>
         </div>
