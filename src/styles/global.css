@@ -8,11 +8,11 @@
  /* Navbar Styling  */
  @font-face {
 	font-family: 'Neco Bold';
-	src: url(C:/Users/D7/astro-project-722/public/Neco-Bold.woff) format("woff");
+	src: url(./public/Neco-Bold.woff) format("woff");
  }
  @font-face {
 	font-family: 'Satoshi';
-	src: url(C:/Users/D7/astro-project-722/public/Satoshi-Medium.woff) format("woff");
+	src: url(./public/Satoshi-Medium.woff) format("woff");
  }
  
  *{
@@ -114,7 +114,7 @@ h1, h2, h3, h4{
  }
  
  nav a:hover{
-   color: #d36135;
+   color: #86615c;
  }
  
  .logo{
@@ -140,7 +140,7 @@ h1, h2, h3, h4{
  }
  
  .logo a:hover{
-   color: #d36135;
+   color: #86615c;
  }
  
  .menu{
