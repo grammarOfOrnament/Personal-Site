@@ -8,11 +8,11 @@
  /* Navbar Styling  */
  @font-face {
 	font-family: 'Neco Bold';
-	src: url(public/Neco-Bold.woff);
+	src: url(C:/Users/D7/astro-project-722/public/Neco-Bold.woff) format("woff");
  }
  @font-face {
 	font-family: 'Satoshi';
-	src: url(public/Satoshi-Medium.woff);
+	src: url(C:/Users/D7/astro-project-722/public/Satoshi-Medium.woff) format("woff");
  }
  
  *{
