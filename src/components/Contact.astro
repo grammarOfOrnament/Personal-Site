@@ -3,28 +3,56 @@
 ---
 
 <style>
-    h1{
+    h1 {
         font-family: "Neco Bold";
         font-size: 4.2rem;
     }
 
-    a {
-        font-size: 1.6rem;
+    .contact-icons a {
+        font-size: 6rem;
         color: #754d18;
+        margin-top: 1rem;
     }
 
-    a:hover{
+    a:hover {
         color: #5f3a09;
         text-decoration: underline;
     }
 
+    .contact-icons-container {
+        /* background-color: black; */
+        display: flex; /* Display the icons in a row */
+        align-items: center; /* Center vertically within the container */
+        /* margin-right: 10rem; */
+    }
+
+    .contact-icons {
+        background-color: bisque;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        border-radius: 4px;
+        width: 100px;
+        height: 100px;
+        display: flex; /* Use flexbox to center content */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
 </style>
 
 <body>
     <section id="contact-section">
         <h1>Let's Talk</h1>
-        <!-- <a href="/blog">Blog</a> -->
-<p>Get in touch via <a href="mailto:jasondipopolo.kindly665@passmail.net">email</a> or connect with me on <a href="https://www.linkedin.com/in/jasondipopolo/">LinkedIn</a>.</p>
+        <p>Get in touch via email or connect with me on Linkedin.</p>
 
+        <!-- <a href="mailto:jasondipopolo.kindly665@passmail.net"> -->
+            <div class="contact-icons-container">
+                <div class="contact-icons">
+                    <a href="mailto:jasondipopolo.kindly665@passmail.net"><ion-icon name="mail"></ion-icon></a>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/jasondipopolo/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div> 
+            </div>
+    
     </section>
 </body>

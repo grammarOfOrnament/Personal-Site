@@ -35,12 +35,16 @@
 h1, h2, h3, h4{
 	font-weight: 700;
    	font-family: "Neco Bold", sans-serif;
-	margin-top: 2.5rem;
+	/* margin-top: 2.5rem; */
 }
 
  p{
 	font-size: 1.6rem;
 	font-family: "Satoshi";
+	/* margin-bottom: 2.4rem; */
+ }
+
+ .logo p{
 	margin-bottom: 2.4rem;
  }
 
@@ -170,7 +174,7 @@ h1, h2, h3, h4{
    nav{
 	 display: block;
 	 position:relative;
-	 padding:15px 20px;
+	 padding:10px 20px;
 	 position:sticky;
 	 top: 0;
    }
@@ -186,11 +190,21 @@ h1, h2, h3, h4{
  
    .toggle{
 	 position: absolute;
-	 top:18px;
+	 top:12px;
 	 right:20px;
+   }
+
+   .logo a{
+	font-size: 2.1rem;
+   }
+
+   .logo p{
+	font-size: 1.4rem;
+	margin-bottom: 1.8rem;
    }
  
  }
+
 
 
 
@@ -292,3 +306,10 @@ blockquote {
 	margin: 0px;
 	font-style: italic;
 }
+
+::selection{
+	background:#1b998aaf;
+}
+
+
+/* https://coolors.co/fef4e8-ffe4c4-1c2520-86605b-1b998b */

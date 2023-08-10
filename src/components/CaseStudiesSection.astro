@@ -28,30 +28,33 @@
 				/* display: flex; */
                 /* justify-content: flex-end; */
                 /* flex-direction: column; */
-                background-color: #666;
+                /* background-color: #666; */
                 border-radius: 4px;
-                max-height: 20rem;
-                box-shadow: inset 0px 130px 40px 6px #fff;
-                transition: box-shadow 1s;
+                
 			}
 
-            .grid_container div:hover{
-                box-shadow: inset 0px 100px 80px #888;
-                cursor: pointer;
-            }
-
 			section{
-                margin-bottom: 8rem;
+                margin-bottom: 4rem;
                 min-width: 80%;
                 max-width: 150rem;
 			}
 
             .grid_container div img {
-                height: 100%;
-                width: 100%;
+                height: 40rem;
                 object-fit: cover;
                 border-radius: 4px;
-                mix-blend-mode: multiply;
+                /* mix-blend-mode: multiply; */
+                cursor: pointer;
+                /* opacity: 75%; */
+                /* transition: opacity 1s; */
+            }
+
+            .grid_container div img:hover{
+                /* opacity: 100%; */
+            }
+
+            .grid_container div img:last-child {
+                width:100%;
             }
 
             h1{
@@ -61,36 +64,53 @@
                 padding-bottom: 1rem;
             }
 
-            h4{
-                padding-left: 1rem;
+            h2{
+                /* padding-left: 1rem; */
                 font-family: "Neco Bold";
-                color: white;
-                font-size: 1.8rem;
-                line-height: 2rem;
-                margin-top: 7.5rem;
+                color: #1c2520;
+                font-size: 2.4rem;
+                /* line-height: 2rem; */
+                /* margin-top: 7.5rem; */
             }
 
             p{
-                padding-left: 1rem;
-                padding-bottom: 1rem;
+                /* padding-left: 1rem; */
                 font-family: "Satoshi";
-                color:white;
-                font-size: 1.4rem;
-                margin-bottom: 0rem;
+                color:#1c2520;
+                font-size: 1.6rem;
+                /* margin-bottom: 0rem; */
             }
 
             .project_title{
-                position: relative;
-                bottom: 130px;
-                pointer-events: none;
+                /* position: relative; */
+                /* bottom: 130px; */
+                /* pointer-events: none; */
             }
 
             .project_subtitle{
-                position: relative;
-                bottom: 130px;
-                pointer-events: none;
+                /* position: relative; */
+                /* bottom: 130px; */
+                /* pointer-events: none; */
+                /* padding-bottom: 1rem; */
+                margin-bottom: 3%;
             }
 
+            a{
+                font-size: 1.6rem;
+                color: #754d18;
+            }
+
+            a:hover{
+            color: #5f3a09;
+            text-decoration: underline;
+            }
+
+            @media screen and (max-width: 1100px) {
+                .project_subtitle{
+                    /* margin-bottom: 2rem; */
+                }
+            }
+            
             @media screen and (max-width: 844px) {
                 div.grid_container {
   				    display: grid;
@@ -100,12 +120,38 @@
                         "project1"
                         "project2"
                         "project3";
-                    margin-bottom: 12rem;
+                    /* margin-bottom: 12rem; */
 			    }
                 .project1_title{
-                    padding-top: 32rem;
+                    /* padding-top: 32rem; */
                 }
             }
+
+            @media screen and (max-width: 380px) {
+                .project_subtitle{
+                    /* margin-bottom: 20rem; */
+                }
+            }
+
+            .image-container {
+                /* display: inline-block; */
+                overflow: hidden; /* Ensure that the overlay doesn't affect layout */
+                transition: filter 0.3s ease-in-out;
+                /* height: 82%; */
+                /* width: 100%; */
+            }
+
+            .image-container img {
+                
+                /* width: 100%; */
+                /* height: auto; */
+                transition: filter .7s;
+            }
+
+            .image-container:hover img {
+                filter: brightness(70%); /* Darken the image on hover */
+            }
+
 
 </style>
 
@@ -113,18 +159,30 @@
         <h1>Works</h1>
         <div class="grid_container">
             <div class="project1">
-                <a href="https://jasondipopolo.notion.site/Siddhartha-Productivity-App-3e79d8fe310d4da5bf5fb51fb113fef1?pvs=4" aria-label="Systematizing Daily Problem-Solving" title="Systematizing Daily Problem-Solving"><img src="Siddhartha.avif" alt="Smartphone running a goal-setting app"></a>
-                <h4 class="project_title">Systematizing Daily Problem-Solving</h4>
+                <div class="image-container">
+                    <a href="https://jasondipopolo.notion.site/Siddhartha-Productivity-App-3e79d8fe310d4da5bf5fb51fb113fef1?pvs=4"><img src="Siddhartha.avif" alt="Smartphone running a goal-setting app"></a>
+                </div>
+                <a class="project_title" href="https://jasondipopolo.notion.site/Siddhartha-Productivity-App-3e79d8fe310d4da5bf5fb51fb113fef1?pvs=4" aria-label="Systematizing Daily Problem-Solving" title="Systematizing Daily Problem-Solving">
+                    Systematizing Daily Problem-Solving
+                </a>
                 <p class="project_subtitle">UX/UI Project</p>
             </div>
             <div class="project2">
-                <a href="https://jasondipopolo.notion.site/Perfect-Mess-Exhibition-Announcement-585afbb8f22449f3beedcd60ff2722bd?pvs=4" aria-label="Exhibition Announcement for Poster Designer" title="Exhibition Announcement for Poster Designer"><img src="QuimMarin.avif" alt="Title card for a poster designer promo video"></a>
-                <h4 class="project_title">Exhibition Announcement for Poster Designer</h4>
+                <div class="image-container">
+                  <a href="https://jasondipopolo.notion.site/Perfect-Mess-Exhibition-Announcement-585afbb8f22449f3beedcd60ff2722bd?pvs=4"><img src="QuimMarin.avif" alt="Title card for a poster designer promo video"></a>
+                </div>
+                  <a class="project_title" href="https://jasondipopolo.notion.site/Perfect-Mess-Exhibition-Announcement-585afbb8f22449f3beedcd60ff2722bd?pvs=4" aria-label="Exhibition Announcement for Poster Designer" title="Exhibition Announcement for Poster Designer">
+                    Exhibition Announcement Promo
+                </a>
                 <p class="project_subtitle">Visual Design Project</p>
             </div>
             <div class="project3">
-                <a href="https://jasondipopolo.notion.site/New-York-Times-Website-Redesign-31d0120478314bcdb475132206e1d94d?pvs=4" aria-label="New York Times Redesign" title="New York Times Redesign"><img src="NYT-Redesign.avif" alt="Screen mockups of a New York Times website redesign"></a>
-                <h4 class="project_title">New York Times Redesign</h4>
+                <div class="image-container">
+                    <a href="https://jasondipopolo.notion.site/New-York-Times-Website-Redesign-31d0120478314bcdb475132206e1d94d?pvs=4"><img src="NYT-Redesign.avif" alt="Screen mockups of a New York Times website redesign"></a>
+                </div>
+                <a class="project_title" href="https://jasondipopolo.notion.site/New-York-Times-Website-Redesign-31d0120478314bcdb475132206e1d94d?pvs=4" aria-label="New York Times Redesign" title="New York Times Redesign">
+                    New York Times Redesign
+                </a>
                 <p class="project_subtitle">UX/UI Project</p>
             </div>
         </div>
