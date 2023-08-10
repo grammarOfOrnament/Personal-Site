@@ -138,13 +138,13 @@ h1, h2, h3, h4{
  .toggle{
    font-size: 30px;
    display:none;
-   margin-top: .1rem;
+   margin-top: -.3rem;
  }
  
  @media screen and (max-width: 600px) {
    nav{
 	 display: block;
-	 position:relative;
+	 /* position:relative; */
 	 padding:5px 20px;
 	 position:sticky;
 	 top: 0;
@@ -176,7 +176,7 @@ h1, h2, h3, h4{
 
    .logo p{
 	font-size: 1.4rem;
-	margin-bottom: 1.8rem;
+	margin-bottom: 2rem;
    }
  
  }
