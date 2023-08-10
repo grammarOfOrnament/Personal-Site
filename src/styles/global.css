@@ -76,35 +76,6 @@ h1, h2, h3, h4{
    text-decoration: none;
  }
  
- .top-bar{
-   display:flex;
-   align-items: center;
-   justify-content:space-between;
-   padding: 10px 25px;
-   background: #ef4b3f;
- }
- 
- .top-bar span{
-   color: #fff;
- }
- 
- .top-bar ul{
-   list-style: none;
-   display:flex;
- }
- 
- .top-bar li{
-   margin: 0 5px;
- }
- 
- .top-bar a{
-   color: #fff;
- }
- 
- .top-bar a:hover{
-   color: #222;
- }
- 
  nav{
    background: #FEF4E8;
    padding: 0.7rem 3%;
@@ -167,14 +138,14 @@ h1, h2, h3, h4{
  .toggle{
    font-size: 30px;
    display:none;
-   margin-top: .3rem;
+   margin-top: .1rem;
  }
  
  @media screen and (max-width: 600px) {
    nav{
 	 display: block;
 	 position:relative;
-	 padding:10px 20px;
+	 padding:5px 20px;
 	 position:sticky;
 	 top: 0;
    }
@@ -183,6 +154,11 @@ h1, h2, h3, h4{
    margin-top: 15px;
    display:none;
    }
+
+   .menu li{
+	padding: 10px 0px;
+	font-size: 16px;
+  }
  
    .menu.active, .toggle{
 	 display: block;
