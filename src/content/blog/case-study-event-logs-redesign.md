@@ -9,13 +9,20 @@ heroImage: "/EventLogs-MilitaryMockup.avif"
   p{
     margin-bottom:2rem;
   }
-    ul li::marker{
-       color:#754d18; 
-    }
-img {
+  ul li::marker{
+    color:#754d18; 
+  }
+  img {
     border-radius:4px;
     /* filter: drop-shadow(0px 4px 5px #1C25204D); */
-}
+  }
+  h1{
+		line-height: 120%;
+	}
+  h2{
+    font-size: 2.4rem;
+	  line-height: 130%;
+  }
 </style>
 
 # Project Background

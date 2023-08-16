@@ -9,16 +9,20 @@ heroImage: "/HowToBeGreatAtYourJob-BookOverview-Featuredimg.avif"
   p{
     margin-bottom:2rem;
   }
-    ul li::marker{
-       color:#754d18; 
-    }
-img {
+  ul li::marker{
+    color:#754d18; 
+  }
+  img {
     border-radius:4px;
     /* filter: drop-shadow(0px 4px 5px #1C25204D); */
-}
-h2{
-  font-size: 2.4rem;
-}
+  }
+  h1{
+		line-height: 120%;
+	}
+  h2{
+    font-size: 2.4rem;
+	  line-height: 130%;
+  }
 </style>
 
 I picked up Justin Kerr’s How to Be Great at Your Job as it was recommended by a UX Designer online and it caught my attention. I’m always interested in **picking apart how to best perform these important things we often neglect** and aren’t taught like writing emails or communicating in the workplace.

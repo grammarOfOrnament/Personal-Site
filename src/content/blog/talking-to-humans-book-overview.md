@@ -9,16 +9,20 @@ heroImage: "/TalkingToHumans-BookOverview-Featuredimg.avif"
   p{
     margin-bottom:2rem;
   }
-    ul li::marker{
-       color:#754d18; 
-    }
-img {
+  ul li::marker{
+    color:#754d18; 
+  }
+  img {
     border-radius:4px;
     /* filter: drop-shadow(0px 4px 5px #1C25204D); */
-}
-h2{
-  font-size: 2.4rem;
-}
+  }
+  h1{
+		line-height: 120%;
+	}
+  h2{
+    font-size: 2.4rem;
+	  line-height: 130%;
+  }
 </style>
 
 The top practices today in customer discovery for lean startup business models are covered in Giff Constable’s Talking to Humans. While less than a book and more of a concise and practical guide, I loved every bit of information it had to offer. I wanted share what I learned in my time reading it.

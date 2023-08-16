@@ -53,7 +53,7 @@ h1, h2, h3, h4{
 	font-family: "Satoshi";
  }
 
- li:not(nav){
+ li:not(.menu li){
 	font-size: 1.6rem;
 	list-style-position: outside;
 	margin-left:2rem;
@@ -132,7 +132,7 @@ h1, h2, h3, h4{
  
  .menu li{
    padding: 15px 10px;
-   font-size: 16px;
+   font-size: 1.6rem;
  }
  
  .toggle{
@@ -157,7 +157,11 @@ h1, h2, h3, h4{
 
    .menu li{
 	padding: 10px 0px;
-	font-size: 16px;
+	font-size: 1.6rem;
+  }
+
+  .menu li:last-child{
+	margin-bottom: 1rem;
   }
  
    .menu.active, .toggle{
