@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+	(b, a) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
 
@@ -28,6 +28,7 @@ const posts = (await getCollection('blog')).sort(
 				list-style-type: none;
 				padding: unset;
 				margin-top: 3rem;
+				margin-left:-2rem;
 				font-size: 1.6rem;
 			}
 			ul li {
@@ -40,24 +41,84 @@ const posts = (await getCollection('blog')).sort(
 				color: #595959;
 			}
 			ul li a:visited {
-				color: #8e32dc;
+				color: #5f3a09;
+			}
+
+			a{
+				color: #754d18;
+			}
+
+			a:hover {
+        		color: #5f3a09;
+    	    	text-decoration: underline;
+			}
+
+			img{
+				border-radius:4px;
+				margin-bottom:1rem;
+				max-width:100%;
+				
+			}
+
+			.flex-container{
+				display:flex;
+				flex-wrap: wrap;
+			}
+
+			.blogpost{
+				max-width:50%;
+			}
+
+			.blogpost:first-child{
+				min-width:100%;
+			}
+
+			.blogpost img{
+				transition: filter .7s;
+			}
+
+			.blogpost img:hover{
+				filter: brightness(70%); 
+			}
+
+			section{
+			 margin: 0% 3%;
+			}
+
+			@media screen and (max-width: 600px) {
+				.blogpost{
+					max-width:100%;
+				}
+				h1{
+					line-height: 4.5rem;
+				}
+				section{
+			 		margin: 0% 1%;
+				}
 			}
 		</style>
+
+
 	</head>
 	<body>
 		<Header />
 		<main>
 			<section>
-				<h1>Blog Posts</h1>
+				<h1>Design Insights</h1>
 				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-								<FormattedDate date={post.data.pubDate} />
-							</li>
+					
+						<div class="flex-container">
+						{posts.map((post) => (
+							<div class="blogpost">
+								<li>
+									<a href={`/blog/${post.slug}/`}><img src={post.data.heroImage}></a>
+									<a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+									<FormattedDate date={post.data.pubDate} />
+								</li>
+							</div>
+						</div>
 						))
-					}
+						}
 				</ul>
 			</section>
 		</main>

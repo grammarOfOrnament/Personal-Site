@@ -55,8 +55,8 @@ h1, h2, h3, h4{
 
  li:not(nav){
 	font-size: 1.6rem;
-	list-style-position: inside;
-	/* padding-left: 4rem; */
+	list-style-position: outside;
+	margin-left:2rem;
  }
 
  ul:not(.menu){
