@@ -2,7 +2,7 @@
 title: "UX/UI Case Study: Waypoint Logs Page Redesign"
 description: "Developed an event logs page for the enterprise application, Waypoint, aiming to enhance findability and readability to aid users in evaluating application performance."
 pubDate: "Aug 10 2023"
-heroImage: "/public/EventLogs-MilitaryMockup.avif"
+heroImage: "/EventLogs-MilitaryMockup.avif"
 ---
 
 <style>
